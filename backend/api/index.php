@@ -11,6 +11,9 @@ $requestUri = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
 $controller = isset($requestUri[1]) ? $requestUri[1] : 'default';
 $action = isset($requestUri[2]) ? $requestUri[2] : 'index';
 
+// Logging for debugging
+error_log("API endpoint accessed: Controller='{$controller}', Action='{$action}'");
+
 // Simple response for testing
 echo json_encode([
     'message' => 'Welcome to Hambazaar API!',

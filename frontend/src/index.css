@@ -1,3 +1,10 @@
+/* Import Vazirmatn font */
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+}
